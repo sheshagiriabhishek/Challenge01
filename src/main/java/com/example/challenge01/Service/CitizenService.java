@@ -8,7 +8,7 @@ public interface CitizenService {
 	
 	Citizen createCitizen(Citizen citizen);
 	List<Citizen> getAllCitizens();
-	Citizen updateCitizen(Citizen citizen);
+	void updateCitizen(Citizen citizen);
 	void deleteCitizen(Citizen citizen);
 	
 	

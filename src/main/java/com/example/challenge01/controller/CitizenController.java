@@ -32,10 +32,11 @@ public class CitizenController {
 	}
 	
 	@PostMapping("/updateCitizen")
-	ResponseEntity<Citizen> updateCitizen(@RequestBody Citizen citizen){
+	HttpStatus updateCitizen(@RequestBody Citizen citizen){
 		
 		
-		return ResponseEntity.ok().body(citizenService.updateCitizen(citizen));
+		citizenService.updateCitizen(citizen);
+		return HttpStatus.OK;
 		
 		
 		
